@@ -1,0 +1,95 @@
+package tema4;
+
+
+/**
+ *
+ * @author Sebas
+ */
+public class Tema4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        // Usando if
+        
+        System.out.println("Ejercicio usando if:");
+        int numeroIF = 4;
+        
+        if (numeroIF == 0) {
+            System.out.println("El numero es igual a cero.");
+        } else if (numeroIF >0) {
+        System.out.println("El numero es positivo.");
+        } else if (numeroIF <0) {
+        System.out.println("El numero es negativo.");
+        }
+        System.out.println("");
+        
+        
+        
+        // Usando Bucle While
+        
+        System.out.println("Ejercicio usando bucle While:");
+        int numeroWhile = 3;
+        
+        while (numeroWhile >0) {
+            System.out.println(numeroWhile);
+            numeroWhile = numeroWhile -1;
+        }
+        System.out.println("");
+        
+        
+        
+        // Usando bucle Do While
+        
+        System.out.println("Ejercicio usando bucle Do While:");
+        
+        numeroWhile = 3;
+        
+        do {
+            System.out.println(numeroWhile);
+            numeroWhile = numeroWhile -1;
+        } while (numeroWhile <0);
+            
+        System.out.println("");
+        
+        
+        // Usando bucle For
+        
+        System.out.println("Ejercicio usando bucle For:");
+        
+        for (int numeroFor = 0; numeroFor <= 3; numeroFor = numeroFor +1) {
+            System.out.println(numeroFor);
+        }
+        
+        System.out.println("");
+        
+        
+        // Usando Switch
+        
+        System.out.println("Ejercicio usando Switch:");
+        
+        String estacion = "verano";
+        
+        switch (estacion) {
+            case "verano":
+                System.out.println("Estamos en verano.");
+                break;
+            case "otoño":
+                System.out.println("Estamos en otoño");
+                break;
+            case "invierno":
+                System.out.println("Estamos en invierno");
+                break;
+            case "primavera":
+                System.out.println("Estamos en primavera");
+                break;  
+            default:
+                System.out.println("No se a introducido una estacion.");
+                    
+        }
+        
+    }
+    
+}
